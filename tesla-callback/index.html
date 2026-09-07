@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="de">
+  <head>
+      <meta charset="utf-8">
+      <title>Tesla OAuth Callback</title>
+  </head>
+<body style="font-family: sans-serif; max-width: 40em; margin: 3em auto;">
+  <h1>Tesla Login abgeschlossen</h1>
+  <p>Kopiere den folgenden Code zurueck ins Terminal:</p>
+  <pre id="code" style="font-size: 1.3em; padding: 1em; background: #eee; word-break: break-all;"></pre>pre>
+  <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("code").textContent = params.get("code") || "(kein code in der URL gefunden)";
+  </script>
+</body>body>
+</html>html>
+
+  </script></p></h1></title>
+  </head>
